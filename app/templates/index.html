@@ -1,0 +1,424 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Abhijith Premraj</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#141414] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#303030] px-10 py-3 bg-[#141414]">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">AP</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#about" >About Me</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#exp">Professional Experience</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#cert">Certifications</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#edu">Education</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#projects">Projects</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("../static/data/main_pic.jpg");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("../static/data/main_pic.jpg");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Abhijith Premraj
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">Computer Vision/AI Engineer</h2>
+                  </div>
+                  <div class="flex-wrap gap-3 flex">
+                    <a
+                      href="#contact"
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] no-underline hover:bg-gray-800 transition duration-200"
+                    >
+                      <span class="truncate">Contact</span>
+                    </a>
+
+                    <a href="{{ url_for('static', filename='data/cv.pdf') }}" download>
+                      <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-gray-700 transition duration-200"
+                      >
+                        <span class="truncate">Download CV</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 id='about' class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm Abhijith Premraj, a Computer Vision and AI Engineer with a passion for developing innovative solutions. My expertise lies in applying advanced algorithms to solve complex problems across various domains. I’m committed to continuous learning and staying at the forefront of emerging technologies in AI and machine learning.
+            </p>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Skills</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="CodepenLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M235.79,89l-104-56a8,8,0,0,0-7.58,0l-104,56A8,8,0,0,0,16,96v64a8,8,0,0,0,4.21,7.05l104,56a8,8,0,0,0,7.58,0l104-56A8,8,0,0,0,240,160V96A8,8,0,0,0,235.79,89ZM224,146.61,189.45,128,224,109.39Zm-51.43-27.7L136,99.22V53.39L215.13,96Zm-44.57,24L100.3,128,128,113.09,155.7,128Zm-8-89.52V99.22L83.43,118.91,40.87,96Zm-88,56L66.55,128,32,146.61Zm51.43,27.7L120,156.78v45.83L40.87,160ZM136,202.61V156.78l36.57-19.69L215.13,160Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Python</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="StackOverflowLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,152.09V216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152.09a8,8,0,0,1,16,0V208H200V152.09a8,8,0,0,1,16,0Zm-128,32h80a8,8,0,1,0,0-16H88a8,8,0,1,0,0,16Zm4.88-53,77.27,20.68a7.89,7.89,0,0,0,2.08.28,8,8,0,0,0,2.07-15.71L97,115.61A8,8,0,1,0,92.88,131Zm18.45-49.93,69.28,40a8,8,0,0,0,10.93-2.93,8,8,0,0,0-2.93-10.91L119.33,67.27a8,8,0,1,0-8,13.84Zm87.33,13A8,8,0,1,0,210,82.84l-56.57-56.5a8,8,0,0,0-11.32,11.3Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">PyTorch</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="ReadCvLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M210.78,39.25l-130.25-23A16,16,0,0,0,62,29.23l-29.75,169a16,16,0,0,0,13,18.53l130.25,23h0a16,16,0,0,0,18.54-13l29.75-169A16,16,0,0,0,210.78,39.25ZM178.26,224h0L48,201,77.75,32,208,55ZM89.34,58.42a8,8,0,0,1,9.27-6.48l83,14.65a8,8,0,0,1-1.39,15.88,8.36,8.36,0,0,1-1.4-.12l-83-14.66A8,8,0,0,1,89.34,58.42ZM83.8,89.94a8,8,0,0,1,9.27-6.49l83,14.66A8,8,0,0,1,174.67,114a7.55,7.55,0,0,1-1.41-.13l-83-14.65A8,8,0,0,1,83.8,89.94Zm-5.55,31.51A8,8,0,0,1,87.52,115L129,122.29a8,8,0,0,1-1.38,15.88,8.27,8.27,0,0,1-1.4-.12l-41.5-7.33A8,8,0,0,1,78.25,121.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">OpenCV</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="CodesandboxLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M223.68,66.15,135.68,18a15.94,15.94,0,0,0-15.36,0l-88,48.18a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM168,152v50.09l-32,17.52V132.74l80-43.8v32l-43.84,24A8,8,0,0,0,168,152Zm-84.16-7L40,121v-32l80,43.8v86.87L88,202.09V152A8,8,0,0,0,83.84,145Zm-.7-88.41,41,22.45a8,8,0,0,0,7.68,0l41-22.45,34.48,18.87L128,118.88,48.66,75.44ZM128,32h0l28.2,15.44L128,62.89,99.8,47.45ZM40,139.22l32,17.52v36.59L40,175.82Zm144,54.11V156.74l32-17.52v36.6Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">MATLAB</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="DropboxLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M236.55,149.42,194.05,120l42.5-29.42a8,8,0,0,0,0-13.16l-52-36a8,8,0,0,0-9.1,0L128,74.27,80.55,41.42a8,8,0,0,0-9.1,0l-52,36a8,8,0,0,0,0,13.16L62,120l-42.5,29.42a8,8,0,0,0,0,13.16l52,36a8,8,0,0,0,9.1,0L128,165.73l47.45,32.85a8,8,0,0,0,9.1,0l52-36a8,8,0,0,0,0-13.16ZM128,146.27,90.05,120l38-26.27L166,120Zm52-88.54L218,84,180,110.27,142.05,84Zm-104,0L114,84,76,110.27,38.05,84Zm0,124.54L38.05,156l38-26.27L114,156Zm104,0L142.05,156,180,129.73,218,156Zm-21.53,24.64a8,8,0,0,1-2,11.13l-23.89,16.54a8,8,0,0,1-9.1,0L99.56,218a8,8,0,0,1,9.1-13.16L128,218.27l19.34-13.39A8,8,0,0,1,158.47,206.91Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Docker</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="WindowsLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,136H136a8,8,0,0,0-8,8v57.45a8,8,0,0,0,6.57,7.88l80,14.54A7.61,7.61,0,0,0,216,224a8,8,0,0,0,8-8V144A8,8,0,0,0,216,136Zm-8,70.41-64-11.63V152h64ZM104,136H40a8,8,0,0,0-8,8v40a8,8,0,0,0,6.57,7.87l64,11.64a8.54,8.54,0,0,0,1.43.13,8,8,0,0,0,8-8V144A8,8,0,0,0,104,136Zm-8,50.05-48-8.73V152H96ZM221.13,33.86a8,8,0,0,0-6.56-1.73l-80,14.55A8,8,0,0,0,128,54.55V112a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V40A8,8,0,0,0,221.13,33.86ZM208,104H144V61.22l64-11.63ZM109.13,54.22a8,8,0,0,0-6.56-1.73l-64,11.64A8,8,0,0,0,32,72v40a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V60.36A8,8,0,0,0,109.13,54.22ZM96,104H48V78.68L96,70Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Azure AI</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Git</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="TelegramLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M236.88,26.19a9,9,0,0,0-9.16-1.57L25.06,103.93a14.22,14.22,0,0,0,2.43,27.21L80,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L173,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L239.77,35A9,9,0,0,0,236.88,26.19Zm-61.14,36L86.15,126.35l-49.6-9.73ZM96,200V152.52l24.79,21.74Zm87.53,8L100.85,135.5l119-85.29Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Langchain</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="StackOverflowLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,152.09V216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152.09a8,8,0,0,1,16,0V208H200V152.09a8,8,0,0,1,16,0Zm-128,32h80a8,8,0,1,0,0-16H88a8,8,0,1,0,0,16Zm4.88-53,77.27,20.68a7.89,7.89,0,0,0,2.08.28,8,8,0,0,0,2.07-15.71L97,115.61A8,8,0,1,0,92.88,131Zm18.45-49.93,69.28,40a8,8,0,0,0,10.93-2.93,8,8,0,0,0-2.93-10.91L119.33,67.27a8,8,0,1,0-8,13.84Zm87.33,13A8,8,0,1,0,210,82.84l-56.57-56.5a8,8,0,0,0-11.32,11.3Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">MLflow</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#474747] bg-[#212121] p-4 items-center">
+                <div class="text-white" data-icon="StackOverflowLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,152.09V216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152.09a8,8,0,0,1,16,0V208H200V152.09a8,8,0,0,1,16,0Zm-128,32h80a8,8,0,1,0,0-16H88a8,8,0,1,0,0,16Zm4.88-53,77.27,20.68a7.89,7.89,0,0,0,2.08.28,8,8,0,0,0,2.07-15.71L97,115.61A8,8,0,1,0,92.88,131Zm18.45-49.93,69.28,40a8,8,0,0,0,10.93-2.93,8,8,0,0,0-2.93-10.91L119.33,67.27a8,8,0,1,0-8,13.84Zm87.33,13A8,8,0,1,0,210,82.84l-56.57-56.5a8,8,0,0,0-11.32,11.3Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Scikit-learn</h2>
+              </div>
+            </div>
+            <section id="exp">
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Professional Experience</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#474747] py-5">
+                <p class="text-[#ababab] text-sm font-normal leading-normal">Computer Vision Engineer, Carl Zeiss Meditec AG, Oberkochen, Germany</p>
+                <p class="text-white text-sm font-normal leading-normal">
+                 Led the end-to-end development of a novel 6DoF head pose estimation framework by integrating CNN-based registration, 3D point-cloud alignment, and real-time camera feed processing into a unified production-ready pipeline for surgical video streams; engineered dataset transformation scripts to convert annotations between coordinate systems, generated ground-truth bounding boxes via 3D model projection from annotated poses, and applied KDE-based statistical analysis to optimize balanced train/val/test splits; built and deployed a GUI-enabled camera calibration toolbox leveraging OpenCV and MATLAB algorithms with comprehensive documentation adopted by internal R&D teams; improved ChArUco-based calibration reliability through statistical filtering and automated outlier rejection; validated pose models using metric-driven, calibration-aware empirical analysis; and presented research insights regularly while mentoring junior engineers on advanced calibration and system-level integration challenges.
+                </p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#474747] py-5">
+                <p class="text-[#ababab] text-sm font-normal leading-normal">Automation Engineer, CEAT Pvt Ltd, Vadodara, Gujarat</p>
+                <p class="text-white text-sm font-normal leading-normal">
+                  Analyzed time-series data across R&D lab project workflows to identify process bottlenecks and operational inefficiencies, automated data acquisition and reporting pipelines using Python-based tools to reduce manual handling by 80%, and developed a lab inventory management system that enabled data-driven resource planning, optimized storage utilization, and significantly reduced stock-outs.
+                </p>
+              </div>
+            </div>
+            </section>
+            <h2 id="cert" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Certifications</h2>
+            <div id="certScroll" tabindex="0" aria-live="polite" style="outline:none;">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full max-w-[250px] bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("/static/data/Azure\ AI\ Essentials.jpg");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Microsoft Azure AI Essentials Professional Certificate</p>
+                  <p class="text-[#ababab] text-sm font-normal leading-normal">Issued by Microsoft and LinkedIn</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full max-w-[250px] bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("/static/data/ai_agents_fundamentals.png");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">AI Agents Fundamentals</p>
+                  <p class="text-[#ababab] text-sm font-normal leading-normal">Issued by Hugging Face</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <h2 id="edu" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Education</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#474747] py-5">
+                <p class="text-[#ababab] text-sm font-normal leading-normal">Master of Science in Digital Engineering</p>
+                <p class="text-white text-sm font-normal leading-normal">Bauhaus University Weimar, Germany, 2022-2025</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#474747] py-5">
+                <p class="text-[#ababab] text-sm font-normal leading-normal">Foundation Degree in Data Science</p>
+                <p class="text-white text-sm font-normal leading-normal">IIT Madras, India, 2021-2022</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#474747] py-5">
+                <p class="text-[#ababab] text-sm font-normal leading-normal">Bachelor of Engineering in Mechanical Engineering</p>
+                <p class="text-white text-sm font-normal leading-normal">Cochin University, Kerala, India, 2015-2019</p>
+              </div>
+            </div>
+            <h2 id="projects" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#212121] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAi9zC1gYBiKrpy_u0_JAJgfqcB4shusS03WfDflQcbSJvpSSgy7TRP7AJamcWt0g5yygyOl7uWYjtVC73JSmBCkD9Pnj_zVYPIH-oHmhJASTG6ps0xpvbGEEIXIypPXTAs_PPO8R50f3V9PsIaYOZY9PcG2L-O0fSOdpEDWcRsf06VhUbhfzyxD_2q8UEmPkQNTPsaCb7xlBrnJCGWKaUyfoALoFarDLrYMt9pYLgqDUDUFK-jMOCDYIW_sPGQumUDGuLYSCBCWd8");'
+                  ></div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Autonomous Navigation System</p>
+                      <p class="text-[#ababab] text-sm font-normal leading-normal">
+                        Developed a system for autonomous navigation using computer vision and deep learning techniques.
+                      </p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Link to GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#212121] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPislWdkVuMecl-cqYOjI0D97XHvOcgessuARFFc_UTOAqJhyUokJ1Qtq5lD4xwlorJFRHchqP0XzO4pLcxNiwX3ElKLJ7MQFQiKM45xyBZgrpqbxWKdRN32vu9aEcdGAwBiIukMtSVim9TgyNKxOa5IXYLxeGUnxj7758W1OOvdojHwoR2NqrYhrHzMlbnI96u0aidZj8tsdo9ZtrIIl8e5M2Vy5nrN0FRvb0hE1O3AMpj2M-pCq8JMLis13_PpcGduOZER7u8NM");'
+                  ></div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Object Detection in Real-Time</p>
+                      <p class="text-[#ababab] text-sm font-normal leading-normal">Implemented a real-time object detection system for surveillance applications.</p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Link to GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#212121] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQrSUCexPQizBW8iLg8t6tGkSYz3p5zV3xKUspCAVOt-JQj5s9hl0jRZANmIEMOUn-2y4yqYRrkjyH1RDNWEbEVYvssAbHsNGXO5RnfQq_LPCONtSFvGhoSi03KBYnTP6OTqXxUTQNw79fb-uPkofnx2UV1F1CkPQcHim85h0JWHQ1Gil5aVXV2N_Wf3tMmazc7V8sRDlGaC6Gi7u2YjK-vcjzmQtGJ4Qars_BTwH9ZcBhCRrdHwhH_vwICP8_TGWOmxpfrH7POSc");'
+                  ></div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Advanced Image Recognition System</p>
+                      <p class="text-[#ababab] text-sm font-normal leading-normal">
+                        Created an image recognition system using convolutional neural networks for accurate classification.
+                      </p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Link to GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#212121] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHs5_mw3nHRD4DqCLHf4YzK5SBSRdwC6aVaaItm8lYJbgUbu8mFu2gXsBK-_V5TD9PbuvF5MyIJYRIoB5WSNrKsNtPkkh-MIDCakSHFVyiOWU9iMsikbruungti19sC9WbZW_zoF8XYqtD9QwvREWmraMtGcA0BCXLfEPM1irDp5n1febCliXMgGN6qdFJXOBrgXk9vLrFQ_hxJbCPx-sLpeij5E-eiVPFU0Xr8vJisbxRiPJb1qN-uyEye6DMElmCT5jJs_Pm-98");'
+                  ></div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Intelligent Video Analysis Tool</p>
+                      <p class="text-[#ababab] text-sm font-normal leading-normal">
+                        Designed a tool for analyzing video content, detecting events, and extracting key information.
+                      </p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Link to GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#212121] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxGC-Nq1At3M_n2CtIotV2cUjwDOqUXpcZpx9QufIx6i2dJMgd7FZTxrWfshbFvFw9YbBoE2J-hmn22XyZoxbasnal7z0vD2CTZWXW2akqPukYX-qkFN6uyvc3ifde1TNUlDu7r2Otb0b1fYuUS0FJ2-mZbrEzcpBSWf4BJemQ1XMV8zitv6Uc-Yt3oxLluK5oha0kwq9fY-7pLLydLtGnFkg4uGT8sc_KXdZANonWDx_PC2SZoktf55u4qNryAvWtCnuHs7aQJI4");'
+                  ></div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Medical Image Analysis Platform</p>
+                      <p class="text-[#ababab] text-sm font-normal leading-normal">Built a platform for analyzing medical images to assist in diagnosis and treatment planning.</p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Link to GitHub</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#212121] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARVFoCLP1z9ZfbgIG60ruNLogr2_0MkuRnwaeoJ28NzIgnalx9SfyvvrYrZhREnYnX4f2tCfdjqU6UDe6SMF7tdCbAPl3qJJJ7SaVa32UUhoiXki-0ZfjnDg5c7j5xEnT_kowd14-UG2K0NQfOWSmHAihAYB8xcQNNSJElu2dWU36sRYThwPwuMV_zHyF7oTqyJC5yfH95O3PUHCT-WCcEaY4aB33M4h0W9EMzMYvmSSe-F3iOOXmoT9OUiT1KfF86FIzN5GVCTOo");'
+                  ></div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Robotics Control System</p>
+                      <p class="text-[#ababab] text-sm font-normal leading-normal">
+                        Developed a control system for robotics applications, integrating computer vision for enhanced perception.
+                      </p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#303030] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Link to GitHub</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="scroll-buttons-container"></div>
+            <h2 id="contact" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
+            <p class="text-[#ababab] text-sm font-normal leading-normal pb-3 pt-1 px-4 underline">Email: 
+              <a href="mailto:premraj.abhijith@gmail.com" class="text-[#ababab] hover:text-white">premraj.abhijith@gmail.com</a></p>
+            <p class="text-[#ababab] text-sm font-normal leading-normal pb-3 pt-1 px-4">Connect with me on LinkedIn, Instagram, and X</p>
+            <div class="@container">
+              <div class="gap-2 px-4 flex flex-wrap justify-start">
+                <!-- LinkedIn -->
+                <div class="flex flex-col items-center gap-2 bg-[#141414] py-2.5 text-center w-20">
+                  <a href="https://www.linkedin.com/in/abhijith-premraj-37246816b" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 bg-[#141414] py-2.5 text-center w-20 no-underline">
+                    <div class="rounded-full bg-[#303030] p-2.5">
+                      <div class="text-white" data-icon="LinkedinLogo" data-size="20px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-white text-sm font-medium leading-normal">LinkedIn</p>
+                  </a>
+                </div>
+                
+                <!-- Instagram -->
+                <div class="flex flex-col items-center gap-2 bg-[#141414] py-2.5 text-center w-20">
+                  <a href="https://www.instagram.com/abhi_wan_ken0bi/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 bg-[#141414] py-2.5 text-center w-20 no-underline">
+                    <div class="rounded-full bg-[#303030] p-2.5">
+                      <div class="text-white" data-icon="InstagramLogo" data-size="20px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-white text-sm font-medium leading-normal">Instagram</p>
+                  </a>
+                </div>
+                
+                <!-- X (Twitter) -->
+                <div class="flex flex-col items-center gap-2 bg-[#141414] py-2.5 text-center w-20">
+                  <a href="https://x.com/AbhijithP12" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 bg-[#141414] py-2.5 text-center w-20 no-underline">
+                    <div class="rounded-full bg-[#303030] p-2.5">
+                      <div class="text-white" data-icon="XLogo" data-size="20px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-white text-sm font-medium leading-normal">X</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/projects.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/smoothscroll.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/cert.js') }}" defer></script>
+  </body>
+</html>

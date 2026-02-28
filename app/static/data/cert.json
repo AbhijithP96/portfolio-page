@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Deep Learning Specialization",
+        "issuer":"DeepLearning.AI on Coursera",
+        "image":"/static/data/dl.png",
+        "description": "Covers neural networks, CNNs, sequence models, and deep learning best practices, to solve real world problems."
+    },
+    {
+        "name":"Machine Learning Specialization",
+        "issuer":"Stanford University & DeepLearning.AI on Coursera",
+        "image":"/static/data/ml.png",
+        "description": "Covered modern machine learning concepts including supervised learning (linear regression, logistic regression, neural networks, decision trees), unsupervised learning (clustering, anomaly detection), recommender systems, and reinforcement learning. Developed practical skills in applying ML techniques and best practices to solve real-world problems."
+    },
+    {
+        "name":"Microsoft Azure AI Essentials Professional Certificate",
+        "issuer":"Microsoft and LinkedIn",
+        "image":"/static/data/Azure AI Essentials.jpg",
+        "description": "Covers the core concepts related to Artificial Intelligence (AI), along with Microsoft Azure services that can be used to build AI-powered solutions."
+
+    }
+]

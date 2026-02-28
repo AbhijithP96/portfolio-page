@@ -1,0 +1,20 @@
+[
+  {
+    "title": "FFN from Scratch with MNIST",
+    "description": "Flexible from-scratch MNIST FFN with NumPy, MLflow tracking, FastAPI & Docker deployment ",
+    "github": "https://github.com/AbhijithP96/mnist-ffn-numpy",
+    "image": "/static/data/ffn.png" 
+  },
+  {
+    "title": "eda-to-mlops-pipeline",
+    "description": "An end-to-end machine learning project demonstrating the complete workflow from exploratory data analysis (EDA) to model deployment using ZenML and MLflow. This project showcases MLOps best practices including data ingestion, preprocessing, feature engineering, experiment tracking, and pipeline orchestration ",
+    "github": "https://github.com/AbhijithP96/eda-to-mlops-pipeline",
+    "image": "/static/data/mlops.png"  
+  },
+  {
+    "title": "6DoFHPE-Extending with Depth Prediction",
+    "description": "This project builds upon the existing 6DoFHPE pipeline, which estimates the 6 Degrees of Freedom Head Pose using RGB-D images. To eliminate the dependency on explicit depth input, this extension integrates a Depth Prediction Estimator (DPE) that generates depth maps directly from RGB images. The remaining pipeline remains unchanged, using the predicted depth in place of the actual depth to estimate the translation vector. This implementation is part of the methodology developed during my Master’s Thesis, focused on enhancing the practicality and scalability of head pose estimation systems by removing the need for specialized depth cameras",
+    "github": "https://github.com/AbhijithP96/6DoFHPE-Depthless",
+    "image": "/static/data/H3DPose.png"
+  }
+]
