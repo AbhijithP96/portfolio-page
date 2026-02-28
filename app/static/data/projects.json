@@ -1,5 +1,17 @@
 [
   {
+    "title": "YOLO Head Detection",
+    "description": "YOLO-based human head detection using the HollywoodHeads dataset and Ultralytics YOLOv8. This repository contains data ingestion, preprocessing, training, experiment tracking (MLflow + DagsHub), and a DVC pipeline to reproduce runs and artifact management.",
+    "github": "https://github.com/AbhijithP96/yolo-head-detection",
+    "image": "/static/data/unet.jpg" 
+  },
+  {
+    "title": "MobileNet-UNet for Lane Segmentation",
+    "description": "This project implements a production-ready lane segmentation model that combines the efficiency of MobileNetV2 with the accuracy of U-Net architecture. The solution achieves 68.36% Dice coefficient with only 27MB model size and 78ms inference time, making it suitable for real-time autonomous driving applications.",
+    "github": "https://github.com/AbhijithP96/mobile_unet",
+    "image": "/static/data/unet.jpg" 
+  },
+  {
     "title": "FFN from Scratch with MNIST",
     "description": "Flexible from-scratch MNIST FFN with NumPy, MLflow tracking, FastAPI & Docker deployment ",
     "github": "https://github.com/AbhijithP96/mnist-ffn-numpy",
