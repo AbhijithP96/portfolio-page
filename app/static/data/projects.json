@@ -1,5 +1,11 @@
 [
   {
+    "title": "Self-RAG Chat Application",
+    "description": "Self-RAG Chat is an advanced AI chat application that implements the Self-Reflective Retrieval-Augmented Generation (Self-RAG) pattern. ",
+    "github": "https://github.com/AbhijithP96/self-rag",
+    "image": "/static/data/selfrag.png" 
+  },
+  {
     "title": "YOLO Head Detection",
     "description": "YOLO-based human head detection using the HollywoodHeads dataset and Ultralytics YOLOv8. This repository contains data ingestion, preprocessing, training, experiment tracking (MLflow + DagsHub), and a DVC pipeline to reproduce runs and artifact management.",
     "github": "https://github.com/AbhijithP96/yolo-head-detection",
